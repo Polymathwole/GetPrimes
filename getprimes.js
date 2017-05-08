@@ -1,5 +1,4 @@
-module.exports={
-getPrimes:(n)=>
+const getPrimes=(n)=>
 {
 	let primeNumbers=[];
 
@@ -7,6 +6,10 @@ getPrimes:(n)=>
 		return "This is not a number!"
 	else
 		{
+			if (n<1)
+				return "Number cannot be less than1"
+			else
+			{
 			for(let element=0;element<=n;++element)
 				{
 					let halfOfElement = Math.floor(element/2);//reduced by half in order to reduce iterations
@@ -23,9 +26,12 @@ getPrimes:(n)=>
 
 					if (count===0)
 						primeNumbers.push(element);
-				}	
+				}
+			}	
 		}
 
-	return primeNumbers;
-}
+	if (primeNumbers.length===0)
+		return [];
+	else
+		return primeNumbers;
 }
