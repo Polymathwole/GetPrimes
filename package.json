@@ -1,0 +1,22 @@
+{
+  "name": "getprimes",
+  "version": "1.0.0",
+  "description": "primes calculator",
+  "main": "getprimes.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polymathwole/GetPrimes.git"
+  },
+  "author": "Oluwaremi Oluwole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Polymathwole/GetPrimes/issues"
+  },
+  "homepage": "https://github.com/Polymathwole/GetPrimes#readme",
+  "devDependencies": {
+    "jasmine": "^2.6.0"
+  }
+}

@@ -1,13 +1,15 @@
-const getPrimes=(n)=>
+module.exports=
+{ 
+	getPrimes:(n)=>
 {
 	let primeNumbers=[];
 
-	if (typeof n!==number)
+	if (typeof n!=="number")
 		return "This is not a number!"
 	else
 		{
 			if (n<1)
-				return "Number cannot be less than1"
+				return "Number cannot be less than 1"
 			else
 			{
 			for(let element=0;element<=n;++element)
@@ -34,4 +36,5 @@ const getPrimes=(n)=>
 		return [];
 	else
 		return primeNumbers;
+}
 }
